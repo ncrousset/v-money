@@ -17,6 +17,8 @@ export default function (el, binding) {
   }else {
     if(el.value === undefined) return
   }
+  
+  console.log("Directive")
 
   el.oninput = function () {
     var positionFromEnd = el.value.length - el.selectionEnd
