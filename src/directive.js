@@ -14,6 +14,8 @@ export default function (el, binding) {
     } else {
       el = els[0]
     }
+  }else {
+    if(el.value === undefined) return
   }
 
   el.oninput = function () {
